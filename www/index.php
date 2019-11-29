@@ -78,19 +78,18 @@
                 <img src="img/WhiteLogo.png">
                 <ul id="reg-enter">
                     <li id="enter">
-                        Вход
+                        <b>Вход</b>
                     </li>
                     <li id="reg">
-                        Регистрация
+                        <b>Регистрация</b>
                     </li>
                 </ul>
             </div>
             <div id="footerright">
+                <div class="adres"><b>Адрес:</b></div>
                 <div class="address">
-                    <font color="ffa642">АДРЕС:</font>
-                </div>
-                <div class="address-mail">
-                    челябинск, проспект ленина, 80</p>
+                    челябинск, проспект ленина, 80 </div>
+                <div class="mail">
                      <font color="ffa642">e-mail:</font> random.address@gmail.com
                 </div>
                 <div class="networks">
@@ -102,16 +101,16 @@
             <div id="footercenter">
                 <ul id="menu-footer">
                     <li id="about">
-                        <a href="#about" title="Нажмите, чтобы перейти"><b>О нас</b></a>
+                        <a href="" title="Нажмите, чтобы перейти"><b>О нас</b></a>
                     </li>
                     <li id="gallery">
-                        <a href="#gallery" title="Нажмите, чтобы перейти"><b>Правила</b></a>
+                        <a href="" title="Нажмите, чтобы перейти"><b>Правила</b></a>
                     </li>
                     <li id="in">
-                        <a href="#in" title="Нажмите, чтобы перейти"><b>Контакты</b></a>
+                        <a href="" title="Нажмите, чтобы перейти"><b>Контакты</b></a>
                     </li>
                     <li id="reg">
-                        <a href="#reg" title="Нажмите, чтобы перейти"><b>FAQ</b></a>
+                        <a href="" title="Нажмите, чтобы перейти"><b>FAQ</b></a>
                     </li>
                 </ul>
             </div>
