@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
         <meta name="keyword" conent="концерт, Челябинск"/>
         <meta name="description" content="Концерты BelaSono в Челябиске"/>
         <link href="css/style.css" rel="stylesheet" type="text/css">
@@ -13,6 +14,7 @@
     <body>
         <header>
             <figure class="logo"><a href="/index.php"><img src="img/BlackLogo.png"></a></figure>
+            <figure class="menu2"><a href=""><img src="img/menu2.png"></a></figure>
             <div id="nav">
                 <ul id="buttom-block">
                     <li id="about">
@@ -86,19 +88,17 @@
                 </ul>
             </div>
             <div id="footerright">
-                <ul>
-                <li class="adres"><b>Адрес:</b></li>
-                <li class="address">
-                    челябинск, проспект ленина, 80 </li>
-                <li class="mail">
+                <div class="adres"><b>Адрес:</b></div>
+                <div class="address">
+                    челябинск, проспект ленина, 80 </div>
+                <div class="mail">
                      <font color="ffa642">e-mail:</font> random.address@gmail.com
-                </li>
+                </div>
                 <div class="networks">
                     <a href="" title="Наша группа Вконтакте"><img src="img/VK.png" alt="Вконтакте" title="Вконтакте"/></a>
                     <a href="" title="Наш Instagram"><img src="img/Youtube.png" alt="Youtube" title="Youtube"/></a>
                     <a href="" title="Наш Youtube канал"><img src="img/Insta.png" alt="Instagram" title="Instagram"/></a>
                 </div>
-            </ul>
             </div>
             <div id="footercenter">
                 <ul id="menu-footer">
