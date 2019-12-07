@@ -233,7 +233,8 @@ footer {
 #footerleft{
     float: left;
     width: 40%;
-    height: 30%;color:#ffa642;
+    height: 30%;
+    color:#ffa642;
     text-align: center;
     font-size: 1.5em;
     font-family: Calibri, sans-serif;
@@ -243,8 +244,7 @@ footer {
     padding-top: 1%;
     padding-bottom: 4%;
 }
-#footerleft {
-}
+
 #footerleft li {
    display: inline-block;
    width: 20%;
@@ -300,9 +300,58 @@ footer {
 
 
 @media screen and (min-width: 1500px){
-    #buttom-block a {
-        color: #f10d8f;
+    header{ min-height: 130px; }
+    .logo{width: 8%;
+        top: 3%;}
+    #buttom-block { font-size: 1.5em;}
+    #buttom-block a { color: #f10d8f;}
+    #first-page{ min-height: 650px;}
+    #december{font-size: 2.0em;}
+    #press-here{font-size: 1.5em; }
+    #sofar{font-size: 1em;}
+    #second-page {padding-left:18%;
+        padding-right:18%;}
+    h1 {font-size: 3.0em;}
+    h2{ font-size: 1.7em;}
+    #second-page p{ font-size: 1.6em;}
+    #first-pict{width: 50%;
+        padding-right: 0%;
+        padding-left: 0%;}
+    #text1 {width: 44%;
+        padding-top: 2%;
+        padding-left: 2%;
+        padding-right: 4%;}
+    #second-pict{ width: 50%;
+        padding-right: 0%;
+        padding-left: 0%;}
+    #text2 {width: 45%;
+        padding-bottom: 14%;
+        padding-top: 4%;
+        padding-left: 1%;
+        padding-right: 4%;}
+    #third-pict{width: 50%;
+        padding:  1%;
+        padding-left: 0%;
+        padding-right: 0%;
     }
+    #text3 {width: 44%;
+        padding-top: 4%;
+        padding-left: 2%;
+        padding-right: 4%;
+        padding-top: 2%;
+    }
+    footer {padding-bottom: 13%;}
+    #footerleft img{width:30%;
+        padding-top: 2%;}
+    #footerleft {font-size: 1.5em;}
+    #footercenter{font-size: 1.5em;}
+    .adres{font-size: 1.5em;}
+    .address{padding-bottom: 7%;
+        font-size: 1.2em;}
+    .mail{margin-bottom: 6%;
+        font-size: 1.2em;}
+    .networks img{width: 7%;
+       padding-right: 10%;}
 }
 
 @media screen and (max-width: 1200px){
@@ -587,7 +636,7 @@ footer {
     #buttom-block {font-size: 1.0em;
         padding-right: 3%;
         width: 65%; }
-    #buttom-block a {color: #2320b8;}
+    #buttom-block a {color: #7020b8;}
     #december{font-size: 1.6em;
     bottom: 28%;}
     #press-here{font-size: 1.1em;
@@ -596,7 +645,7 @@ footer {
     #second-page {padding-top: 7%;
         padding-left:2%;
         padding-right:2%;
-        min-height: 85em}
+        min-height: 95em}
     h1 {font-size: 2.2em;
         padding-bottom: 7%;}
     h2{font-size: 1.1em;
@@ -684,11 +733,14 @@ footer {
         right: 3%;
         width:20%;
         float: right;}
+    #first-page {min-height: 480px;}
     #buttom-block {display: none;}
     #december{font-size: 1.6em;
-        bottom: 28%;}
+        bottom: 31%;
+        right:3%;}
     #press-here{font-size: 1.1em;
-        bottom: 15%;}
+        bottom: 15%;
+        right:9%;}
     #sofar{font-size: 0.7em;}
     #second-page {padding-top: 7%;
         padding-left:2%;
@@ -725,56 +777,166 @@ footer {
         padding-left: 10%;
         padding-top: 5%;
         padding-bottom: 5%;}
-/* .address{padding-bottom: 9%;}
-        .mail{margin-bottom: 9%;}
-        .networks img{width: 8%;}*/
-    footer {padding-bottom: 70%;
-        position: relative;}
-    #footerleft{position: absolute;
-        top: 7%;
-        left: 5%;
-        width: 45%;
-        height: 30%;
+    footer {position: static;
+        padding-right: 0%;
+        padding-bottom: 5%;
+        display: inline-block;}
+    #footerleft{position: static;
+        width: 40%;
+        padding: 0%;
+        padding-left: 30%;
+        padding-right: 30%;
+        text-align: left;
         font-size: 1.2em;}
-    #footerleft img{width:44%;
-        padding-top: 5%;
-        padding-bottom: 6%;
-        padding-left: 20%;}
+    #footerleft img{width:90%;
+        padding: 10%;}
     #footerleft li {display: inline-block;
-       width: 20%;
-       padding: 2%;}
-    #footercenter{position: absolute;
-        top: 7%;
-        right: 20%;
-        width: 20%;
+        width: 35%;
+        padding: 0%;}
+    #footercenter{position: static;
+        text-align: center;
+        width: 60%;
+        padding: 3%;
+        padding-left: 20%;
+        padding-right: 20%;
         text-align: left;
         font-size: 1.2em;}
     #footercenter li {display: block;
         text-align: center;
-        padding: 6%;
+        padding: 4%;
         padding-left: 4%;
-        padding-bottom: 11%;}
-    #footerright{text-align: center;
-        width: 50%;
-        padding-top: 38%;
-        padding-left: 25%;
-        padding-right: 25%;}
-    #footerright div { display: inline-block;
-    padding-right: 0%;}
-    .adres{ font-size: 1.1em; }
-    .address{ font-size: 1.1em;}
-    .mail{font-size: 1.1em;
+        padding-bottom: 3%;}
+    #footerright{
+        position: static;
+        text-align: center;
+        width: 80%;
         padding-top: 0%;
+        padding-left: 10%;
+        padding-right: 10%;}
+    #footerright div { display: inline-block;
+        padding-right: 0%;
         padding-left: 0%;}
-    .networks{ padding-left: 0%;
+    .adres{ font-size: 1.1em;
+        padding-bottom: 5%;}
+    .address{ font-size: 1.1em;
+        padding-bottom: 5%;}
+    .mail{font-size: 1.1em;
+        margin-bottom: 5%;
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;}
+    .networks{ width: 100%;
         padding-top: 0%;}
-    .networks img{ width: 15%;
-        padding-right: 12%;}
+    .networks img{ width: 9%;
+        padding-right: 5%;
+        padding-left: 5%;}
 }
 
 
 @media screen and (max-width: 320px){
-    #buttom-block a {
-        color: #621ab3;
-    }
+    header {min-height: 100px;}
+    .logo{width: 28%;}
+    .menu2{display: block;
+        position: absolute;
+        top: 33%;
+        right: 5%;
+        width:18%;
+        float: right;}
+    #first-page {min-height: 480px;}
+    #buttom-block {display: none;}
+    #december{font-size: 1.2em;
+        bottom: 31%;
+        right:3%;}
+    #press-here{font-size: 0.9em;
+        bottom: 15%;
+        right:9%;}
+    #sofar{font-size: 0.7em;}
+    #second-page {padding-top: 7%;
+        padding-left:2%;
+        padding-right:2%;
+        min-height: 77em}
+    h1 {font-size: 2.2em;
+        padding-bottom: 7%;}
+    h2{font-size: 1.1em;
+        padding: 0%;}
+    #second-page p{font-size: 1.0em;}
+    #first-step{margin-bottom: 5%;}
+    #first-pict{width: 80%;
+        padding-right: 10%;
+        padding-left: 10%;}
+    #text1 {width: 80%;
+        padding-right: 10%;
+        padding-left: 10%;
+        padding-top: 5%;
+        padding-bottom: 5%;}
+    #second-step{margin-bottom: 4%;}
+    #second-pict{width: 80%;
+        padding-right: 10%;
+        padding-left: 10%; }
+    #text2 {width: 80%;
+        padding-right: 10%;
+        padding-left: 10%;
+        padding-top: 5%;
+        padding-bottom: 5%;}
+    #third-pict{width: 80%;
+        padding-right: 10%;
+        padding-left: 10%;}
+    #text3 {width: 80%;
+        padding-right: 10%;
+        padding-left: 10%;
+        padding-top: 5%;
+        padding-bottom: 5%;}
+    footer {position: static;
+        padding-right: 0%;
+        padding-bottom: 5%;
+        display: inline-block;}
+    #footerleft{position: static;
+        width: 40%;
+        padding: 0%;
+        padding-left: 30%;
+        padding-right: 30%;
+        text-align: left;
+        font-size: 1.2em;}
+    #footerleft img{width:90%;
+        padding: 10%;}
+    #footerleft li {display: inline-block;
+        width: 35%;
+        padding: 0%;}
+    #footercenter{position: static;
+        text-align: center;
+        width: 60%;
+        padding: 3%;
+        padding-left: 20%;
+        padding-right: 20%;
+        text-align: left;
+        font-size: 1.2em;}
+    #footercenter li {display: block;
+        text-align: center;
+        padding: 4%;
+        padding-left: 4%;
+        padding-bottom: 3%;}
+    #footerright{
+        position: static;
+        text-align: center;
+        width: 80%;
+        padding-top: 0%;
+        padding-left: 10%;
+        padding-right: 10%;}
+    #footerright div { display: inline-block;
+        padding-right: 0%;
+        padding-left: 0%;}
+    .adres{ font-size: 1.0em;
+        padding-bottom: 5%;}
+    .address{ font-size: 1.0em;
+        padding-bottom: 5%;}
+    .mail{font-size: 1.0em;
+        margin-bottom: 5%;
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;}
+    .networks{ width: 100%;
+        padding-top: 0%;}
+    .networks img{ width: 9%;
+        padding-right: 5%;
+        padding-left: 5%;}
 }
