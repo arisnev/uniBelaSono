@@ -4,24 +4,39 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="viewport" content="width=device-width; initial-scale=1.0">
         <meta name="keyword" conent="концерт, Челябинск"/>
-        <meta name="description" content="Концерты BelaSono в Челябиске"/>
+        <meta name="description" content="Концерты BelaSono в Челябинске"/>
         <link href="css/style.css" rel="stylesheet" type="text/css">
         <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
 
         <title>BelaSono</title>
     </head>
 
-    <body>
+    <body class="body_pointer">
+
         <header>
             <figure class="logo"><a href="/index.php"><img src="img/BlackLogo.png"></a></figure>
-            <figure class="menu2"><a href=""><img src="img/menu2.png"></a></figure>
+
+            <div id="sidebar">
+                <ul class="mobile">
+                    <span><img src="img/close.png"></span>
+                    <li><a href="/about.php"><b>о нас</b></a></li>
+                    <li><a href="#"><b>галерея</b></a></li>
+                    <li><a href="#"><b>вход</b></a></li>
+                    <li><a href="#"><b>регистрация</b></a></li>
+                </ul>
+                <span class="hamb"><img src="img/menu2.png"></span>
+                <span class="overlay"></span>
+            </div>
+
             <div id="nav">
                 <ul id="buttom-block">
                     <li id="about">
                         <a href="/about.php" title="Перейтит к описанию"><b>о нас</b></a><!--href="/about/artists"-->
                     </li>
                     <li id="gallery">
-                        <a href="" title="Перейтит к галлерее"><b>галлерея</b></a>
+                        <a href="" title="Перейтит к галерее"><b>галерея</b></a>
                     </li>
                     <li id="in">
                         <a href="" title="Войти"><b>вход</b></a>
@@ -32,6 +47,40 @@
                 </ul>
             </div>
         </header>
+            <form style="position:absolute; right:80px; top: 100px" class="form-3" method="post" action="check_user.php">
+                <p class="row">
+                    <label for="login">Логин</label>
+                    <input style="margin-left:100px " type="text" name="log" id="log" placeholder="Логин">
+                </p>
+                <p class="clearfix">
+                    <label for="password">Пароль</label>
+                    <input style="margin-left:100px " type="password" name="pass" id="pass" placeholder="Пароль">
+                </p>
+                <p class="clearfix">
+                    <input style="margin-left:20px" type="submit" name="submit" id="enter" value="Войти">
+                    <button style="margin-left:140px; margin-top:5px" type="button" class="registr" onclick="regist()" id="registr" >Регистрация</button>
+                </p>
+            </form>
+
+            <script type="text/javascript">
+                function regist(){
+                    var req= new XMLHttpRequest();
+                    req.responseType="text";
+                    var ans;
+                    req.onreadystatechange=function () {
+                        ans = req.responseText;
+                        if(ans=="Отправлено"){
+                            alert("Письмо отправлено на почту");
+                        } else {
+                            alert(ans);
+                        }
+                    }
+                    var login = document.getElementById("log").value;
+                    var password = document.getElementById("pass").value;
+                    req.open('GET','new_user.php?log='+login+'&pass='+password);
+                    req.send(null);
+                }
+            </script>
 
         <menu>
             <div id="first-page">
@@ -117,5 +166,29 @@
                 </ul>
             </div>
         </footer>
+        <script type="text/javascript" src="js/script.js"></script>
     </body>
 </html>
+
+
+
+<!--<div id="sidebar">
+
+    <div id="sidebar-popup">
+        <a class="menu-close" href="#"></a>
+        <ul  id="buttom-block">
+            <li id="about">
+                <a href="/about.php" title="Перейтит к описанию"><b>о нас</b></a>
+            </li>
+            <li id="gallery">
+                <a href="" title="Перейтит к галлерее"><b>галлерея</b></a>
+            </li>
+            <li id="in">
+                <a href="" title="Войти"><b>вход</b></a>
+            </li>
+            <li id="reg">
+                <a href="" title="Зарегестрироваться"><b>регистрация</b></a>
+            </li>
+        </ul>
+    </div>
+</div> -->

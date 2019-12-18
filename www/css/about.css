@@ -29,6 +29,12 @@ img{
     height: auto;
     width: auto\9;/*для експлорера*/
 }
+.mobile span, .hamb{
+    display: none;
+}
+#sidebar{
+    display: none;
+}
 
 /*Создаем стили при выделении на сайте*/
 ::selection{
@@ -63,7 +69,7 @@ header{
     min-height: 50%;
     text-align: center;
     float: right;
-    font-size: 1.2em;
+    font-size: 1.3em;
     text-transform: uppercase;
     font-family: Calibri, sans-serif;
 }
@@ -99,6 +105,8 @@ header{
     background-size: cover;
     background-color: #76c3e6;
     position:relative;
+    padding-left: 13%;
+    padding-right: 13%;
 }
 
 h1 {
@@ -106,8 +114,8 @@ h1 {
     text-transform: uppercase;
     font-family: Mistral, sans-serif;
     text-align: center;
-    padding-bottom: 5%;
-    padding-top: 5%;
+    padding-bottom: 7%;
+    padding-top: 7%;
 }
 p {
     font-size: 1.5em;
@@ -115,18 +123,14 @@ p {
 #left {
     text-align: justify;
     float: left;
-    padding-left: 13%;
-    padding-right: 5%;
-    padding-bottom: 3%;
-    width: 32%;
+    padding-right: 4%;
+    width: 46%;
 }
 #right {
     text-align: justify;
     float: right;
-    padding-right: 13%;
-    padding-left: 5%;
-    padding-bottom: 3%;
-    width: 32%;
+    padding-left: 4%;
+    width: 46%;
 }
 /*КОНЕЦ ПЕРВОЙ СТРАНИЦЫ*/
 
@@ -208,34 +212,264 @@ footer {
 /*КОНЕЦ ФУТЕРА*/
 
 
-
-@media screen and (max-width: 1280px){
-    
+@media screen and (min-width: 1500px){
+    header{ min-height: 130px; }
+    .logo{width: 8%;
+        top: 3%;}
+    #buttom-block { font-size: 1.5em;}
+    #first-page{min-height: 640px;
+        padding-left:16%;
+        padding-right:16%;}
+    h1 {font-size: 3.0em;}
+    p {font-size: 1.7em;}
+    #left {width: %;}
+    #right {width: 46%;}
+    footer {padding-bottom: 13%;}
+    #footerleft img{width:30%;
+        padding-top: 2%;}
+    .address{font-size: 1.2em;}
+    .mail{font-size: 1.2em;}
+    .networks img{width: 7%;}
 }
+
+@media screen and (max-width: 1200px){
+    .logo{width: 8%;
+        top: 3%;}
+    #buttom-block { font-size: 1.2em;}
+    #first-page{min-height: 500px;
+        padding-bottom: 2%}
+    h1 {font-size: 2.4em;}
+    p {font-size: 1.3em;}
+    #left {padding-right: 4%;
+        width: 46%;}
+    #right {padding-left: 4%;
+        width: 46%;}
+    #footerleft img{width:30%;
+        padding-top: 2%;}
+    #footerleft {font-size: 1.4em;}
+    #footercenter{font-size: 1.4em;}
+    .adres{font-size: 1.4em;}
+}
+
 @media screen and (max-width: 1024px){
-
+    header,footer{min-height: 90px;}
+    .logo{width: 9%;
+        top: 0%;}
+    #buttom-block {font-size: 1.1em;}
+    #first-page{padding-left: 12%;
+        padding-right: 12%;}
+    h1 {font-size: 2.2em;
+        padding-bottom: 6%;}
+    p {font-size: 1.1em;}
+    #left {padding-right: 5%;
+        width: 45%;}
+    #right {padding-left: 5%;
+        width: 45%;}
+    #footerleft{font-size: 1.3em;}
+    #footerleft img{padding-top: 3%;
+    padding-left: 10%;}
+    #footercenter{padding-top: 2%;
+        width: 18%;
+        font-size: 1.3em;}
+    #footerright{width: 32%;
+        font-size: 0.9em;}
+    .adres{font-size: 1.3em;
+        padding-bottom: 6%;
+        padding-top: 10%;}
+    .mail{margin-bottom: 7%;}
+    .networks img{width: 7%; }
 }
-@media screen and (max-width: 768px){
 
-}
-@media screen and (max-width: 600px){
 
+@media screen and (max-width: 880px){
+    .logo{width: 10%;}
+    #buttom-block {font-size: 1.2em;
+        padding-right: 3%;}
+    h1 {font-size: 2.2em;}
+    p {font-size: 1.2em;}
+    footer {padding-bottom: 15%;}
+    #footerleft img{width:38%;
+        padding-top: 5%;}
+    #footercenter{padding-top: 2%;}
+    #footercenter li {padding-bottom: 10%;}
+    .adres{padding-bottom: 8%;}
+    .address{padding-bottom: 9%;}
+    .mail{margin-bottom: 9%;}
+    .networks img{width: 8%;}
 }
+
+@media screen and (max-width: 767px){
+    .logo{width: 11%;}
+    #buttom-block {width: 65%; }
+    #first-page{min-height: 600px;}
+    h1 {font-size: 2.2em;
+        padding-top: 10%;
+        padding-bottom: 8%;}
+    p {font-size: 1.2em;}
+    #left {padding-right: 5%;
+        width: 45%;}
+    #right {padding-left: 5%;
+        width: 45%;}
+    footer {padding-bottom: 50%;
+        position: relative;}
+    #footerleft{position: absolute;
+        top: 5%;
+        left: 9%;
+        width: 45%;
+        height: 30%;
+        font-size: 1.2em;}
+    #footerleft img{width:44%;
+        padding-bottom: 6%;
+        padding-left: 20%;}
+    #footercenter{position: absolute;
+        top: 10%;
+        right: 20%;
+        width: 20%;
+        text-align: left;
+        font-size: 1.2em;}
+    #footercenter li {text-align: center;
+        padding-left: 4%;
+        padding-bottom: 11%;}
+    #footerright{text-align: center;
+        width: 50%;
+        padding-top: 33%;
+        padding-left: 25%;
+        padding-right: 25%;}
+    #footerright div { display: inline-block;
+    padding-right: 0%;}
+    .adres{ font-size: 1.1em;}
+    .address{ font-size: 1.1em;}
+    .mail{font-size: 1.1em;
+        padding-top: 0%;
+        padding-left: 0%;}
+    .networks{ padding-left: 0%;
+        padding-top: 0%;}
+    .networks img{ width: 15%;
+        padding-right: 12%;}
+}
+
+
+@media screen and (max-width: 650px){
+    .logo{width: 14%;}
+    #first-page{min-height: 650px;}
+    h1 {font-size: 2.2em;}
+    p {font-size: 1.1em;}
+    #left {padding-right: 5%;
+        width: 45%;}
+    #right {padding-left: 5%;
+        width: 45%;}
+    footer {padding-bottom: 55%;}
+    #footercenter{top: 7%;}
+}
+
+@media screen and (max-width: 575px){
+    .logo{width: 15%;}
+    #buttom-block {font-size: 1.0em;}
+    #first-page{min-height: 750px;}
+    h1{padding-top: 12%;
+        padding-bottom: 10%;}
+    footer {padding-bottom: 70%;
+        position: relative;}
+    #footerleft{top: 7%;
+        left: 5%;}
+    #footerleft img{padding-top: 5%;}
+    #footercenter li {display: block;
+        padding: 6%;}
+    #footerright{padding-top: 38%;}
+}
+
 @media screen and (max-width: 480px){
-
+    header {min-height: 110px;}
+    .logo{width: 22%;}
+    #buttom-block {display: none;}
+    #sidebar{display: block;}
+    .mobile{width: 150px;
+        height: 150px;;
+        background: #2d2d2d;
+        display: block;
+        position: fixed;
+        right: -260px;
+        padding: 25px;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        z-index: 10;
+        color:  #2d2d2d;}
+    .mobile li{margin-bottom: 20px;}
+    .mobile li:last-child{margin-bottom: 0px;}
+    .mobile span{ display: block;
+        position: absolute;
+        top: 5%;
+        right: 20px;
+        width:8%;}
+    .hamb{display: block;
+        position: absolute;
+        top: 33%;
+        right: 3%;
+        width:20%;
+        float: right;}
+    .overlay{display: none;
+        width:100%;
+        height: 100%;
+        position: fixed;
+        background: rgba(50,50,50,0.4);
+        top:0;
+        left: 0;
+        z-index: 9;}
+    .body_pointer * {cursor: pointer;}
+    #first-page {min-height: 600px;}
+    h1 {font-size: 1.8em;}
+    p {font-size: 1.0em;}
+    #left, #right {float: none;
+        padding-right: 0%;
+        padding-left: 0%;
+        width: 100%;
+        padding-bottom: 5%;}
+    footer {position: static;
+        padding-right: 0%;
+        padding-bottom: 5%;
+        display: inline-block;}
+    #footerleft{position: static;
+        width: 40%;
+        padding: 0%;
+        padding-left: 30%;
+        padding-right: 30%;
+        text-align: left;}
+    #footerleft img{width:90%;
+        padding: 10%;}
+    #footerleft li {width: 35%;
+        padding: 0%;}
+    #footercenter{position: static;
+        text-align: center;
+        width: 60%;
+        padding: 3%;
+        padding-left: 20%;
+        padding-right: 20%;}
+    #footercenter li {padding: 4%;
+        padding-bottom: 3%;}
+    #footerright{position: static;
+        width: 80%;
+        padding-top: 0%;
+        padding-left: 10%;
+        padding-right: 10%;}
+    #footerright div {padding-left: 0%;}
+    .adres{ padding-bottom: 5%;}
+    .address{padding-bottom: 5%;}
+    .mail{margin-bottom: 5%;
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;}
+    .networks{ width: 100%;}
+    .networks img{ width: 9%;
+        padding-right: 5%;
+        padding-left: 5%;}
 }
+
+
 @media screen and (max-width: 320px){
-
+    header {min-height: 100px;}
+    .logo{width: 28%;}
+    #footerleft li {display: inline-block;}
+    .adres{ font-size: 1.0em;}
+    .address{ font-size: 1.0em;}
+    .mail{font-size: 1.0em;}
 }
-
-
-
-/*
-@media screen and (min-width: 2500px)
-@media screen and (min-width: 1800px) and (max-width: 2500px)
-@media screen and (max-width: 1200px)
-@media screen and (max-width: 980px)
-@media screen and (max-width: 650px)
-@media screen and (max-width: 480px)
-@media screen and (max-width: 400px)
-@media screen and (max-width: 300px)*/

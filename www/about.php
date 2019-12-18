@@ -2,10 +2,13 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
         <meta name="keyword" conent="концерт, Челябинск"/>
-        <meta name="description" content="Концерты BelaSono в Челябиске"/>
+        <meta name="description" content="Концерты BelaSono в Челябинске"/>
         <link href="css/about.css" rel="stylesheet" type="text/css">
         <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
 
         <title>BelaSono</title>
     </head>
@@ -13,13 +16,26 @@
     <body>
         <header>
             <figure class="logo"><a href="/index.php"><img src="img/WhiteLogo.png"></a></figure>
+
+            <div id="sidebar">
+                <ul class="mobile">
+                    <span><img src="img/close.png"></span>
+                    <li><a href="/about.php"><b>о нас</b></a></li>
+                    <li><a href="#"><b>галерея</b></a></li>
+                    <li><a href="#"><b>вход</b></a></li>
+                    <li><a href="#"><b>регистрация</b></a></li>
+                </ul>
+                <span class="hamb"><img src="img/menu2about.png"></span>
+                <span class="overlay"></span>
+            </div>
+
             <div id="nav">
                 <ul id="buttom-block">
                     <li id="about">
                         <a href="" title="Перейтит к описанию"><b>о нас</b></a><!--href="/about/artists"-->
                     </li>
                     <li id="gallery">
-                        <a href="" title="Перейтит к галлерее"><b>галлерея</b></a>
+                        <a href="" title="Перейтит к галерее"><b>галерея</b></a>
                     </li>
                     <li id="in">
                         <a href="" title="Войти"><b>вход</b></a>
